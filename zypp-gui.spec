@@ -14,6 +14,7 @@ BuildRequires:  rust-packaging
 BuildRequires:  meson
 BuildRequires:  rust
 BuildRequires:  zstd
+BuildRequires:  gettext
 BuildRequires:  pkgconfig(gio-unix-2.0)
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(gsettings-desktop-schemas) >= 3.11.5
