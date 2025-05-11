@@ -35,6 +35,16 @@ Application can update the system, search, install and remove the package, confi
 
 %prep
 %autosetup -a1 -p1
+%cargo_prep -v vendor
+cat >>.cargo/config.toml <<EOF
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+
+EOF
 
 %build
 %meson
