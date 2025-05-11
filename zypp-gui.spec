@@ -25,6 +25,8 @@ BuildRequires:  pkgconfig(libsystemd)
 BuildRequires:  pkgconfig(libzstd)
 BuildRequires:  pkgconfig(packagekit-glib2) >= 1.1.0
 BuildRequires:  pkgconfig(polkit-gobject-1)
+BuildRequires:  python-gobject3
+BuildRequires:  python-gi
 Requires:       packagekit
 Requires:       pkexec
 
